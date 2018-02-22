@@ -1,0 +1,3 @@
+rootProject.name = 'JsonProject'
+
+include ':app'
