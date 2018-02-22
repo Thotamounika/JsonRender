@@ -9,43 +9,29 @@ class AppBodyData extends Component {
   render() {
 
 
-    let items=this.props.data;
+    let items=this.props.data.map(function(item,index){
+
+      return(
+
+          <Card>
+
+              <CardItem>
+                <Body>
+                  <Text>
+                    {item.title}
+                  </Text>          
+                </Body>
+              </CardItem>
+            </Card>
+
+        )
+    });
 
 
 
     return (
       <Content>
-       <Card>
-
-       <CardItem>
-            <Body>
-              <Text>
-              UserId:{items.userId}
-              </Text>          
-            </Body>
-          </CardItem>
-          <CardItem>
-            <Body>
-              <Text>
-              ID: {items.id}
-              </Text>          
-            </Body>
-          </CardItem>
-          <CardItem>
-            <Body>
-              <Text>
-              Title: {items.title}
-              </Text>          
-            </Body>
-          </CardItem>
-          <CardItem>
-            <Body>
-              <Text>
-              Body: {items.body}
-              </Text>          
-            </Body>
-          </CardItem>
-      </Card>
+        {items}
       </Content>
     );
   }

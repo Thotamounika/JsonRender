@@ -1,6 +1,6 @@
 
 import React, { Component } from 'react';
-import {Container, Content,Text,Card,Body} from 'native-base';
+import {Container,Header,Left,Button,Title,Right,Icon, Content,Text,Card,Body} from 'native-base';
 import {StyleSheet} from 'react-native';
 import AppBody from './AppBody';
 
@@ -10,6 +10,17 @@ export default class App extends Component<Props> {
     return (
       <Container>
         <Content>
+        <Header>
+          <Left>
+            <Button transparent>
+              <Icon name='menu' />
+            </Button>
+          </Left>
+          <Body>
+            <Title>List Of the Titles</Title>
+          </Body>
+          <Right />
+        </Header>
            <AppBody/>
         </Content>
       </Container>
