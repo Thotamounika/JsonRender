@@ -1,7 +1,7 @@
 
 import React, { Component } from 'react';
 
-import {Container, Content,Text,Card,CardItem,Body} from 'native-base';
+import {Container,Left,Thumbnail, Content,Text,Card,CardItem,Body} from 'native-base';
 
 class AppBodyData extends Component {
 
@@ -14,14 +14,18 @@ class AppBodyData extends Component {
       return(
 
           <Card>
-
-              <CardItem>
+            <CardItem>
+              <Left>
+                <Thumbnail source={require('./Bulb.png')} />
                 <Body>
-                  <Text>
-                    {item.title}
-                  </Text>          
+                  <Text>{item.title}</Text>
+                  
                 </Body>
-              </CardItem>
+              </Left>
+            </CardItem>
+            <CardItem content>
+              <Text style={{flex: 1, justifyContent: 'center',textAlign: 'justify',color:'grey'}}>{item.body}</Text>
+            </CardItem>
             </Card>
 
         )

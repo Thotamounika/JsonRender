@@ -17,7 +17,7 @@ export default class App extends Component<Props> {
             </Button>
           </Left>
           <Body>
-            <Title>List Of the Titles</Title>
+            <Title>Articles</Title>
           </Body>
           <Right />
         </Header>
