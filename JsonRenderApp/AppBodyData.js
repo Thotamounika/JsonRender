@@ -24,7 +24,7 @@ class AppBodyData extends Component {
               </Left>
             </CardItem>
             <CardItem content>
-              <Text style={{flex: 1, justifyContent: 'center',textAlign: 'justify',color:'grey'}}>{item.body}</Text>
+              <Text style={{flex: 1, justifyContent: 'center',textAlign: 'justify',color:'gray'}}>{item.body}</Text>
             </CardItem>
             </Card>
 
